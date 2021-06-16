@@ -1,6 +1,4 @@
-//Access Form via Element ID
-
-var checkNullField = () => { 
+var checkNullField = () => {
     let fullName = document.getElementById('fullname');
     let dropDown = document.getElementById('dropdown');
     let date = document.getElementById('date');
@@ -9,50 +7,63 @@ var checkNullField = () => {
     let NIN = document.getElementById('NIN');
     let temperature = document.getElementById('temperature');
     let email = document.getElementById('email');
-    
+
     let nullField = document.querySelector('.null-field')
 
-    if(fullName.value == "" || fullName.value.length < 8){
+    if (fullName.value == "" || fullName.value.length < 8) {
         fullName.style.border = "2px solid red";
         fullName.focus()
         return false;
-    }else{
+
+    } else {
+
         fullName.style.border = "2px solid green";
     }
-    
-    if  (dropDown.value == "select your Gender"){
+
+    if (dropDown.value == "select your Gender") {
         dropDown.style.border = "2px solid red";
         dropDown.focus()
         return false;
-    }else{
+
+    } else {
+
         dropDown.style.border = "2px solid green";
     }
 
-    if(date.value == "") {
+    if (date.value == "") {
         date.style.border = "2px solid red";
         date.focus()
         return false;
+
+    } else {
+
+        date.style.border = "2px solid green";
     }
 
-     if(phoneNumber.value == "" || isNaN(phoneNumber.value) || phoneNumber.value.length != 10){
+    if (isNaN(phoneNumber.value) || phoneNumber.value.length != 10) {
         alert("Please input your phone number  in the format 07########")
         phoneNumber.focus()
         return false;
     }
 
-    if(residence.value == ""){
+    if (residence.value == "") {
         residence.style.border = "2px solid red";
         residence.focus()
         return false;
-    } 
-
-    if(NIN.value == "" || NIN.value.length != 14) {
-        alert("Please input your correct NIN(14 characters)")
-        NIN.focus()
-        return false;
+    } else {
+        date.style.border = "2px solid green";
     }
 
-    if(temperature.value == "" || c_sign < 1){
+    if (NIN.value == "" || NIN.value.length != 14) {
+        alert("Please input your correct NIN(14 characters)")
+        return false;
+
+    } else {
+        date.style.border = "2px solid green";
+
+    }
+
+    if (temperature.value == "" || c_sign < 1) {
         var c_sign = temperature.value.indexOf("C")
         alert("Please input your tempreture in the right format. ##C");
         //temperature.textContent = "Please input your tempreture in the right format. ##C";
@@ -60,15 +71,15 @@ var checkNullField = () => {
         temperature.focus()
         return false;
     }
-    
+
     //nullField.textContent = "fill in the missing field(s)";
     //nullField.style = "font-size:18px; color:red;"
 
-    return(true);
+    return (true);
 }
 
 /*var checkTempField = () => {
-    
+
 }
 const reg_form = document.getElementById('register-form');
 reg_form.addEventListener('submit',checkNullField);
