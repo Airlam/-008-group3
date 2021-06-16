@@ -60,25 +60,7 @@ var checkNullField = () => {
         temperature.focus()
         return false;
     }
-
-    /*if(email.value == ""){
-        email.style.border = "2px solid red";
-        email.focus()
-        return false;
-    }*/
     
-    /*if(birthDate.value == ""){
-        birthDate.style.border = "2px solid red";
-        birthDate.focus()
-        
-    }
-
-    if(weightclass.value == ""){
-        alert('Please make a selection');
-        weightclass.focus()
-        return false;
-    }*/
-
     //nullField.textContent = "fill in the missing field(s)";
     //nullField.style = "font-size:18px; color:red;"
 

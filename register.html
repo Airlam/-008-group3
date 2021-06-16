@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kigwo Gumbya</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title">Kigwo Gumbya Registration</h1>
+
+            <p id="description">Please fill in the required information</p>
+        </header>
+
+        <div id="form-wrapper">
+            <form action="" id="register-form">
+                <div class="form-group">
+                    <input type="text" name="fullName" id="fullname" class="form-control-2" placeholder="Fullname" >
+                    <input type="tel" name="phoneNumberOne" id="phone-number-1" class="form-control-2 form-float" placeholder="Phone Number" >
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" id="kinname" class="form-control-2" placeholder="Next Of Kin's Fullname" >
+                    <input type="tel" name="" id="phone-number-2" class="form-control-2 form-float" placeholder="Phone Number" >
+                </div>
+                
+                <div class="form-group">
+                    <input type="text" name="" id="district" class="form-control-2" placeholder="District Of Origin" >
+                    <input type="occupation" name="occupation" id="occupation" class="form-control-2 form-float" placeholder="Occupation" >
+                </div>
+
+                <div class="form-group">
+                    <input type="number" name="" id="height" class="form-control-2" placeholder="Height (m)" min="10" max="100">
+                    <input type="number" name="" id="weight" class="form-control-2 form-float" placeholder="Weight (kg)" min="10" max="100">
+                </div>
+
+                <div class="form-group">
+                    <label for="birth-date">Enter your date of birth</label>
+                    <input type="date" name="" id="birth-date" class="form-control"placeholder="Date Of Birth" >
+                </div>
+
+                <div id="weight-class" class="form-group">
+                    <select name="weight-class" id="dropdown">
+                        <option value="heavyweight">Select your weight class?</option>
+                        <option value="welterweight">Heavyweight</option>
+                        <option value="welterweight">Welterweight</option>
+                        <option value="featherweight">Featherweight</option>
+                    </select>
+                </div>
+
+                <p class="null-field"></p>
+
+                <button id="submit" type="button" onclick="checkNullField()">Register</button>
+            </form>
+        </div>
+
+        <script src="register.js"></script>
+    </div>
+</body>
+</html>
